@@ -1,0 +1,10 @@
+.inputRow{
+  display: flex;
+  justify-content: center;
+ 
+  margin-top: auto;
+}
+
+.aligntextfiled{
+  padding-top: 24px;
+}

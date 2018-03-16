@@ -20,7 +20,7 @@ class App extends Component {
     console.log("in componentdidmount")
     this.callApi()
       .then(res => {console.log(res); 
-        this.extractActionList(res)
+        //this.extractActionList(res)
         const content = res.map((item) =>
           <div key={item.id}>
             <h3>{item.todo}</h3>
@@ -52,7 +52,7 @@ class App extends Component {
 
   rerender = ()=>{ console.log("in rerender")
     this.callApi().then(res => {console.log(res); 
-    this.extractActionList(res)
+    //this.extractActionList(res)
     const content = res.map((item) =>
       <div key={item.id}>
         <h3>{item.todo}</h3>
@@ -86,7 +86,7 @@ class App extends Component {
         {this.state.content}
         
 
-        <button>Add Todo</button>
+        
         {/* <ul>
           {Object.keys(this.state.response).map((item) =>
             <li>
